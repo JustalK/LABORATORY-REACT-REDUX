@@ -8,6 +8,7 @@ module.exports = override(
     '@styles': path.resolve(__dirname, 'src/styles'),
     '@components': path.resolve(__dirname, 'src/components'),
     '@services': path.resolve(__dirname, 'src/services'),
-    '@constants': path.resolve(__dirname, 'src/constants')
+    '@constants': path.resolve(__dirname, 'src/constants'),
+    '@redux': path.resolve(__dirname, 'src/redux')
   })
 )

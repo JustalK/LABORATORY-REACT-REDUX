@@ -4,20 +4,32 @@
  */
 
 import React from 'react'
-import Seo from '@components/Seo'
+import { connect } from 'react-redux'
 
 /**
  * @function Home
  * Create the component Home
  * @return {Object} Return the dom of the Home page
  */
-const Home = () => {
+const Home = ({ count, increaseRedesign, decreaseRedesign }) => {
   return (
-    <>
-      <Seo title="Home" description="Description of Home" />
-      Test
-    </>
+    <div>
+      <button onClick={() => increaseRedesign()}>Increment</button>
+      <button onClick={() => decreaseRedesign({ type: 'DECREMENT' })}>
+        Decrease
+      </button>
+      global count: {count}
+    </div>
   )
 }
 
-export default Home
+const states = (state) => {
+  return { count: state }
+}
+
+const dispatcher = (dispatch) => ({
+  increaseRedesign: () => dispatch({ type: 'INCREMENT' }),
+  decreaseRedesign: (type) => dispatch(type)
+})
+
+export default connect(states, dispatcher)(Home)
