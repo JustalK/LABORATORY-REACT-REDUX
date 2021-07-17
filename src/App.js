@@ -1,18 +1,18 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { ROUTE_HOME, ROUTE_SECONDARY } from '@constants/routes'
-import Home from '@pages/Home'
-import Secondary from '@pages/Secondary'
+import Store1 from '@pages/Store1'
+import Store2 from '@pages/Store2'
 
 export default function App() {
   return (
     <Router>
       <Switch>
         <Route path={ROUTE_SECONDARY}>
-          <Secondary />
+          <Store2 />
         </Route>
         <Route path={ROUTE_HOME}>
-          <Home />
+          <Store1 />
         </Route>
       </Switch>
     </Router>
