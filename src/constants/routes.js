@@ -1,2 +1,5 @@
 export const ROUTE_HOME = '/'
-export const ROUTE_SECONDARY = '/2'
+export const ROUTE_2 = '/2'
+export const ROUTE_3 = '/3'
+export const ROUTE_4 = '/4'
+export const ROUTE_5 = '/5'

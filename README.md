@@ -2,21 +2,29 @@
 
 ## Goal
 
-This project is a template for building react-app with all my favorite tools already configured.
+This project is a laboratory for the library react-redux. You will find in this repository a compilation of my tries, tests and experimentation with `React-Redux` and more particularly with the hook of redux.
+Feel free to try the repository.
 
-Obviously, the app is using the latest version of `react`. For avoiding the relative path, I modified the webpack and allowing the import with an alias. I also added the support for sass files.
-
-In addition, I added `prettier` and configured it for working well with `esLint`. Finally, I added the basic usefull package such as the router and the helmet.  
+Everything work fine as describe below.
 
 ## Plan of the presentation
 
 I explain with all the details how I build the project and my way of working.
 
+- [Experiences](#experiences)
 - [Documentation](#documentation)
 - [Organization](#organization)
 - [Development](#development)
 - [Running](#running)
 - [Commands](#commands)
+
+## Experiences
+
+- **store1**: Testing the old connect API
+- **store2**: Testing the hooks with the slice of the toolkit
+- **store3**: Testing the hooks with multiple slice
+- **store4**: Using closure for getting a value
+- **store5**: Creating a selector using reselect for memoizing state
 
 ## Documentation
 #### Code documentation
@@ -42,6 +50,7 @@ npm run build:docs
 | :------------ | :------------------------------------------------------ |
 | components    | Regroup the components used inside the pages            |
 | constants     | Regroup the exported constants                          |
+| redux         | Regroup the files related to react reduce (store)       |
 | pages         | Regroup the components representing the pages           |
 | services      | Regroup the services of the app                         |
 | styles        | Regroup the scss files                                  |
@@ -63,6 +72,9 @@ npm run build:docs
 - **jsdoc**: For managing the dev documentation of the project
 - **react-router-dom**: For managing the router and the path to the differents pages
 - **react-helmet**: For managing the meta of the differents page
+- **redux**: One of the peer dependencies of react-redux
+- **react-redux**: For using global reducer and the hook
+- **@reduxjs/toolkit**: For creating the slice of my store
 
 ## Running
 
