@@ -31,7 +31,8 @@ module.exports = {
           ['@styles', './src/styles'],
           ['@components', './src/components'],
           ['@services', './src/services'],
-          ['@constants', './src/constants']
+          ['@constants', './src/constants'],
+          ['@redux', './src/redux']
         ]
       }
     }
@@ -47,6 +48,8 @@ module.exports = {
       }
     ],
     'react/prop-types': 0,
-    'arrow-body-style': 0
+    'arrow-body-style': 0,
+    'no-param-reassign': 0,
+    'no-console': 0
   }
 }
