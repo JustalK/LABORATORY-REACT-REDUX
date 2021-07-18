@@ -26,6 +26,7 @@ I explain with all the details how I build the project and my way of working.
 - **store4**: Using closure for getting a value
 - **store5**: Creating a selector using reselect for memoizing state
 - **store6**: Memoizing dispatch function
+- **store7**: Make use of UseStore for replacing the reducers
 
 ## Documentation
 #### Code documentation
