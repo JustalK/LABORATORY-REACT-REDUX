@@ -18,7 +18,7 @@ export const counterSlice = createSlice({
         state.status = 'loading'
       })
       .addCase(fetchUsers.fulfilled, (state, action) => {
-        console.log(action.payload)
+        state.value = action.payload
         state.status = 'idle'
       })
   }

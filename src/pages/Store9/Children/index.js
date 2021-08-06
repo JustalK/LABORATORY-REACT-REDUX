@@ -21,7 +21,13 @@ const Home = () => {
   return (
     <div>
       <button onClick={() => dispatch(fetchUsers())}>All</button>
-      global count: {val} | status : {status}
+      status : {status}
+      <div>
+        {val.map((v, index) => {
+          console.log(v.name.first)
+          return <div key={index}>{v.name.first}</div>
+        })}
+      </div>
     </div>
   )
 }
