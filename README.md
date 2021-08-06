@@ -28,7 +28,7 @@ I explain with all the details how I build the project and my way of working.
 - **store6**: Memoizing dispatch function
 - **store7**: Make use of UseStore for replacing the reducers
 - **store8**: Checking how the children affect the re-rendering of the parent
-- **store9**: Creating a slice with async clice
+- **store9**: Creating a slice with async call (middleware)
 
 ## Documentation
 #### Code documentation
