@@ -9,11 +9,15 @@ import Store5 from '@pages/Store5'
 import Store6 from '@pages/Store6'
 import Store7 from '@pages/Store7'
 import Store8 from '@pages/Store8'
+import Store9 from '@pages/Store9'
 
 export default function App() {
   return (
     <Router>
       <Switch>
+        <Route path={ROUTES.ROUTE_9}>
+          <Store9 />
+        </Route>
         <Route path={ROUTES.ROUTE_8}>
           <Store8 />
         </Route>
