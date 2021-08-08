@@ -30,6 +30,7 @@ I explain with all the details how I build the project and my way of working.
 - **store8**: Checking how the children affect the re-rendering of the parent
 - **store9**: Creating a slice with async call (middleware)
 - **store10**: Testing how to use entity with createEntityAdapter
+- **store11**: Testing the add, remove, update of the createEntityAdapter
 
 ## Documentation
 #### Code documentation
