@@ -31,6 +31,7 @@ I explain with all the details how I build the project and my way of working.
 - **store9**: Creating a slice with async call (middleware)
 - **store10**: Testing how to use entity with createEntityAdapter
 - **store11**: Testing the add, remove, update of the createEntityAdapter
+- **store12**: Using RTK Query for querying like Apollo 
 
 ## Documentation
 #### Code documentation
