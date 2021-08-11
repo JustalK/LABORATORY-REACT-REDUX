@@ -1,60 +1,38 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import * as ROUTES from '@constants/routes'
-import Store1 from '@pages/Store1'
-import Store2 from '@pages/Store2'
-import Store3 from '@pages/Store3'
-import Store4 from '@pages/Store4'
-import Store5 from '@pages/Store5'
-import Store6 from '@pages/Store6'
-import Store7 from '@pages/Store7'
-import Store8 from '@pages/Store8'
-import Store9 from '@pages/Store9'
-import Store10 from '@pages/Store10'
-import Store11 from '@pages/Store11'
-import Store12 from '@pages/Store12'
+import Experiences from '@pages'
 
 export default function App() {
   return (
     <Router>
-      <Switch>
-        <Route path={ROUTES.ROUTE_12}>
-          <Store12 />
-        </Route>
-        <Route path={ROUTES.ROUTE_11}>
-          <Store11 />
-        </Route>
-        <Route path={ROUTES.ROUTE_10}>
-          <Store10 />
-        </Route>
-        <Route path={ROUTES.ROUTE_9}>
-          <Store9 />
-        </Route>
-        <Route path={ROUTES.ROUTE_8}>
-          <Store8 />
-        </Route>
-        <Route path={ROUTES.ROUTE_7}>
-          <Store7 />
-        </Route>
-        <Route path={ROUTES.ROUTE_6}>
-          <Store6 />
-        </Route>
-        <Route path={ROUTES.ROUTE_5}>
-          <Store5 />
-        </Route>
-        <Route path={ROUTES.ROUTE_4}>
-          <Store4 />
-        </Route>
-        <Route path={ROUTES.ROUTE_3}>
-          <Store3 />
-        </Route>
-        <Route path={ROUTES.ROUTE_2}>
-          <Store2 />
-        </Route>
-        <Route path={ROUTES.ROUTE_HOME}>
-          <Store1 />
-        </Route>
-      </Switch>
+      <div className="navigation">
+        <nav>
+          <ul>
+            {Object.keys(Experiences).map((e, index) => (
+              <li key={index}>
+                <a href={`/${index + 1}`}>{e}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+      <div className="content">
+        <Switch>
+          {Object.keys(Experiences).map((e, index) => {
+            const Type = Experiences[e]
+            return (
+              <Route key={index} path={`/${index + 1}`}>
+                <Suspense fallback={<p>Loading...</p>}>
+                  <Type />
+                </Suspense>
+              </Route>
+            )
+          })}
+          <Route path="/">
+            <span>Click on one of the experience on the left side</span>
+          </Route>
+        </Switch>
+      </div>
     </Router>
   )
 }
