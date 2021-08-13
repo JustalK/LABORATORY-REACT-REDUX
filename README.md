@@ -33,6 +33,8 @@ I explain with all the details how I build the project and my way of working.
 - **store11**: Testing the add, remove, update of the createEntityAdapter
 - **store12**: Using RTK Query for querying like Apollo
 - **store13**: Testing the option of a RTK query  
+- **store14**: Testing the option of a RTK mutation
+- **store15**: Playing with the cache system of RTK
 
 ## Documentation
 #### Code documentation
