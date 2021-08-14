@@ -13,6 +13,7 @@ import Experience12 from '@pages/Store12'
 import Experience13 from '@pages/Store13'
 import Experience14 from '@pages/Store14'
 import Experience15 from '@pages/Store15'
+import Experience16 from '@pages/Store16'
 
 export default {
   Experience1,
@@ -29,5 +30,6 @@ export default {
   Experience12,
   Experience13,
   Experience14,
-  Experience15
+  Experience15,
+  Experience16
 }
