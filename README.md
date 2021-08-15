@@ -36,6 +36,7 @@ I explain with all the details how I build the project and my way of working.
 - **store14**: Testing the option of a RTK mutation
 - **store15**: Playing with the cache system of RTK
 - **store16**: Invalidating query when making a mutation RTK
+- **store17**: Optimistic Update RTK (changing frontend before call is finished)
 
 ## Documentation
 #### Code documentation
