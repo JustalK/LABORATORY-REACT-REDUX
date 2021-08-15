@@ -36,7 +36,9 @@ I explain with all the details how I build the project and my way of working.
 - **store14**: Testing the option of a RTK mutation
 - **store15**: Playing with the cache system of RTK
 - **store16**: Invalidating query when making a mutation RTK
-- **store17**: Optimistic Update RTK (changing frontend before call is finished)
+- **store17**: Prefecthing using non targeted (useLazyQuery vs usePrefetch)
+- **store18**: Optimistic Update RTK (changing frontend before call is finished)
+- **store19**: Code Splitting (how to extend an api)
 
 ## Documentation
 #### Code documentation
